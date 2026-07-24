@@ -19,10 +19,11 @@ export async function downloadInvoicePDF(
   const canvas = await html2canvas(element, {
     scale: 2,
     useCORS: true,
-    allowTaint: true,
+    allowTaint: false, // Must be false to allow canvas.toDataURL() export with uploaded logos
     logging: false,
     backgroundColor: '#ffffff',
     windowWidth: 1200,
+    imageTimeout: 5000,
     onclone: (clonedDoc) => {
       const clonedEl = clonedDoc.getElementById(elementId);
       if (clonedEl) {
