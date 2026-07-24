@@ -15,7 +15,7 @@ export async function downloadInvoicePDF(
   const html2canvas = html2canvasModule.default || html2canvasModule;
   const jsPDF = jsPDFModule.default || jsPDFModule;
 
-  // Clone element or render with clean scale
+  // Clone element & ensure desktop dimensions even on mobile devices
   const canvas = await html2canvas(element, {
     scale: 2,
     useCORS: true,
@@ -23,6 +23,16 @@ export async function downloadInvoicePDF(
     logging: false,
     backgroundColor: '#ffffff',
     windowWidth: 1200,
+    onclone: (clonedDoc) => {
+      const clonedEl = clonedDoc.getElementById(elementId);
+      if (clonedEl) {
+        clonedEl.style.width = '800px';
+        clonedEl.style.maxWidth = '800px';
+        clonedEl.style.minWidth = '800px';
+        clonedEl.style.transform = 'none';
+        clonedEl.style.margin = '0';
+      }
+    },
   });
 
   const imgData = canvas.toDataURL('image/png');
