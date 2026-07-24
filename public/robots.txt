@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://invoicefree.app/sitemap.xml
+Sitemap: https://invoice-maker-7tr.pages.dev/sitemap.xml

@@ -33,7 +33,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="cK7R0r8CMaUlH7grxM8Hjufgud-8b2pPbRBFDZg_3e0" />
-        <link rel="canonical" href="https://invoicefree.app" />
+        <link rel="canonical" href="https://invoice-maker-7tr.pages.dev" />
       </head>
       <body className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white transition-colors">
         <Header />
