@@ -70,7 +70,7 @@ export default function PricingPage() {
             'Priority support & updates',
           ]}
           ctaText="Upgrade to Pro — $5/mo"
-          ctaHref="https://polar.sh" // Placeholder link
+          ctaHref="https://buy.polar.sh/polar_cl_Bo6Ub3Vde9NypHuaWFaxD3032b443gVfeLebB4Rjb2h"
           popular={true}
         />
       </div>

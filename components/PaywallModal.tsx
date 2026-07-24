@@ -49,13 +49,15 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
         </div>
 
         <div className="space-y-3">
-          <Link
-            href="/pricing"
+          <a
+            href="https://buy.polar.sh/polar_cl_Bo6Ub3Vde9NypHuaWFaxD3032b443gVfeLebB4Rjb2h"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={onClose}
             className="block w-full py-3 px-4 text-center text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 rounded-xl shadow-lg shadow-indigo-500/25 transition-all"
           >
             Upgrade to Pro — $5/mo
-          </Link>
+          </a>
           <button
             onClick={onClose}
             className="block w-full py-2 text-center text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
