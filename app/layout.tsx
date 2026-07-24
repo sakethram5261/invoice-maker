@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description:
     'Free online invoice generator. Create professional PDF invoices in seconds with zero sign-up or registration. Download or print instantly.',
   keywords: 'free invoice generator, invoice generator online, pdf invoice maker, free invoice template, online billing tool',
+  verification: {
+    google: 'cK7R0r8CMaUlH7grxM8Hjufgud-8b2pPbRBFDZg_3e0',
+  },
   openGraph: {
     title: 'Free Invoice Generator — No Sign Up Required',
     description: 'Instant, professional PDF invoice maker for freelancers and small businesses.',
@@ -29,6 +32,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="cK7R0r8CMaUlH7grxM8Hjufgud-8b2pPbRBFDZg_3e0" />
         <link rel="canonical" href="https://invoicefree.app" />
       </head>
       <body className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white transition-colors">
